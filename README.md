@@ -10,9 +10,13 @@ Choose your departure and destination, then watch weather updates follow your si
 
 ## Download
 
-**[Download Weatherflight for Windows 11](https://github.com/thethriftypilot/Weatherflight/releases/download/v1.0.0/KFCI-Weatherflight-Windows.zip)** · [All releases](https://github.com/thethriftypilot/Weatherflight/releases)
+**[Download Weatherflight for Windows 11](https://github.com/thethriftypilot/Weatherflight/releases/download/v1.8.0-beta.2/Weatherflight-1.8.0-beta.2-Windows-x64.zip)** · [All releases](https://github.com/thethriftypilot/Weatherflight/releases)
 
-**Testing status: public beta.** The existing download is tagged `v1.0.0`. It has received limited Windows 11 testing and is not yet broadly validated across different graphics cards or multi-monitor configurations. Please report problems and suggestions through Issues.
+**Testing status: public beta.** The current download is tagged `v1.8.0-beta.2`. It has received limited Windows 11 testing and is not yet broadly validated across different graphics cards or multi-monitor configurations. Please report problems and suggestions through Issues.
+
+## New in 1.8.0-beta.2
+
+Watch a complete flight: line up, accelerate, rotate, climb, approach, flare, touch down, and roll to a stop before the arrival journal and next route. Enable **Runway takeoffs and landings** in Route & settings, with real scenery enabled. Both airports need recorded runway endpoints; unsupported routes retain the airborne experience. Runway selection and approaches are decorative and do not model real operational procedures.
 
 ## Features
 
@@ -29,7 +33,7 @@ Choose your departure and destination, then watch weather updates follow your si
 
 Windows 11 (64-bit), Microsoft Edge WebView2 Runtime, .NET Framework 4.8, and a graphics driver supporting WebGL 2 are required. Internet access is required for online scenery, METAR updates, and traffic. Multi-monitor performance depends on your hardware.
 
-1. Download `KFCI-Weatherflight-Windows.zip` from the release assets.
+1. Download `Weatherflight-1.8.0-beta.2-Windows-x64.zip` from the release assets.
 2. Verify its SHA-256 checksum using the instructions below.
 3. Extract the entire ZIP into a folder.
 4. Open the extracted folder containing `Install.cmd` and run it.
@@ -44,13 +48,13 @@ This build is not Authenticode-signed. A checksum verifies file integrity; it do
 In PowerShell, from the folder containing the ZIP, run:
 
 ```powershell
-Get-FileHash -LiteralPath .\KFCI-Weatherflight-Windows.zip -Algorithm SHA256
+Get-FileHash -LiteralPath .\Weatherflight-1.8.0-beta.2-Windows-x64.zip -Algorithm SHA256
 ```
 
-For the existing `v1.0.0` ZIP, the expected SHA-256 is:
+For the `v1.8.0-beta.2` ZIP, the expected SHA-256 is:
 
 ```text
-94970427461d1be883e6365ddd3c2e97bc3fb018184804a8f97cc78b437fe4c8
+385cad1ad946babe65bbd2712f7b1a5bea5c02d82112e6cde5b8952e6722c4ee
 ```
 
 Compare all 64 characters, ignoring letter case. Do not install a file whose checksum does not match. A machine-readable manifest is included in this repository as [SHA256SUMS.txt](SHA256SUMS.txt).
@@ -68,3 +72,4 @@ Weatherflight is free. Donations are optional and are never required to download
 ## Important limitations
 
 **For entertainment, not navigation, flight planning, or operational decision-making.** Surface METAR observations approximate airborne conditions. Imagery may be historical; weather and traffic can be delayed, unavailable, or incomplete. Scenic flight behavior is a visual simulation. Data-source attributions are included with the application.
+
