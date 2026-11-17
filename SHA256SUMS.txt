@@ -1,1 +1,2 @@
 94970427461d1be883e6365ddd3c2e97bc3fb018184804a8f97cc78b437fe4c8  KFCI-Weatherflight-Windows.zip
+385cad1ad946babe65bbd2712f7b1a5bea5c02d82112e6cde5b8952e6722c4ee  Weatherflight-1.8.0-beta.2-Windows-x64.zip
